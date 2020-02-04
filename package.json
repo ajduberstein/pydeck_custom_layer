@@ -1,0 +1,14 @@
+{
+    "name": "TagmapLayer",
+    "version": "0.0.0",
+    "main": "index.js",
+    "private": true,
+    "dependencies": {
+        "@deck.gl/core": "^8.0.12",
+        "@deck.gl/layers": "^8.0.12",
+        "d3-scale": "^3.2.1",
+        "rbush": "^3.0.1",
+        "tagmap.js": "^1.1.1",
+        "viewport-mercator-project": "^7.0.1"
+    }
+}
