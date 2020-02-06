@@ -2,13 +2,22 @@ module.exports = {
   mode: "development",
   output: {
     libraryTarget: "umd",
-    filename: "bundle.js"
+    filename: "bundle.js",
+    library: "TagmapLayer"
   },
   entry: {
     main: "./index.js"
   },
   externals: {
-    "@deck.gl/layers": "deck",
-    "@deck.gl/core": "deck"
+    "@deck.gl/layers": {
+      commonjs: "deck",
+      commonjs2: "deck",
+      root: "deck"
+    },
+    "@deck.gl/core": {
+      root: "deck",
+      commonjs: "deck",
+      commonjs2: "deck"
+    }
   }
 };
