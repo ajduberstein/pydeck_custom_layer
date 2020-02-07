@@ -1,7 +1,7 @@
 import { CompositeLayer } from "@deck.gl/core";
 import { ScatterplotLayer } from "@deck.gl/layers";
 
-export default class DemoCompositeLayer extends CompositeLayer {
+export class DemoCompositeLayer extends CompositeLayer {
   renderLayers() {
     return new ScatterplotLayer(this.props);
   }
