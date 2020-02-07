@@ -3,7 +3,7 @@ module.exports = {
   output: {
     libraryTarget: "umd",
     filename: "bundle.js",
-    library: "TagmapLayer"
+    library: "CustomLayerLibrary"
   },
   entry: {
     main: "./index.js"

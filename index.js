@@ -1,1 +1,1 @@
-export { default } from "./tagmap-layer";
+export { DemoCompositeLayer } from "./custom-composite-layer";
