@@ -1,1 +1,1 @@
-export { DemoCompositeLayer } from "./custom-composite-layer";
+export { LabeledGeoJsonLayer } from "./labeled-geojson-layer";
