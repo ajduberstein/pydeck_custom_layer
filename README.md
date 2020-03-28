@@ -16,5 +16,5 @@ layer = pydeck.Layer(
     get_label_color=[0, 64, 128],
     label_size_units='"meters"',
     line_width_min_pixels=1
-);
+)
 ```
