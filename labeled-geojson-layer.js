@@ -1,5 +1,5 @@
 import { CompositeLayer } from "@deck.gl/core";
-import { GeoJsonLayer, ScatterplotLayer } from "@deck.gl/layers";
+import { GeoJsonLayer, TextLayer } from "@deck.gl/layers";
 
 const defaultProps = {
   // Inherit all of GeoJsonLayer's props
