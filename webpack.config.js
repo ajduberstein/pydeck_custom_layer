@@ -5,9 +5,7 @@ module.exports = {
     filename: "bundle.js",
     library: "LabeledGeoJsonLayerLibrary"
   },
-  entry: {
-    main: "./index.js"
-  },
+  entry: "./index.js",
   externals: {
     "@deck.gl/layers": {
       commonjs: "deck",

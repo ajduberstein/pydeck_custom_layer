@@ -45,7 +45,6 @@ function getLabelAnchors(feature) {
 class LabeledGeoJsonLayer extends CompositeLayer {
   updateState({ changeFlags }) {
     const { data } = this.props;
-    console.log(data);
     if (changeFlags.dataChanged && data) {
       const labelData = (data.features || data).flatMap((feature, index) => {
         const labelAnchors = getLabelAnchors(feature);
