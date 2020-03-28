@@ -5,6 +5,10 @@
     "private": true,
     "dependencies": {
         "@deck.gl/core": "^8.0.12",
-        "@deck.gl/layers": "^8.0.12"
+        "@deck.gl/layers": "^8.0.12",
+        "@turf/turf": "^5.1.6"
+    },
+    "devDependencies": {
+        "webpack": "^4.42.1"
     }
 }

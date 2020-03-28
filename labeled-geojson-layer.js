@@ -1,3 +1,4 @@
+import * as turf from "@turf/turf";
 import { CompositeLayer } from "@deck.gl/core";
 import { GeoJsonLayer, TextLayer } from "@deck.gl/layers";
 
@@ -19,6 +20,27 @@ const defaultProps = {
   // Label font
   fontFamily: "Monaco, monospace"
 };
+
+function getLabelAnchors(feature) {
+  const {type, coordinates} = feature.geometry;
+  switch (type) {
+    case 'Point':
+      return [coordinates];
+    case 'MultiPoint':
+      return coordinates;
+    case 'Polygon':
+      return [turf.centerOfMass(feature).geometry.coordinates];
+    case 'MultiPolygon':
+      let polygons = coordinates.map(rings => turf.polygon(rings));
+      const areas = polygons.map(turf.area);
+      const maxArea = Math.max.apply(null, areas);
+      // Filter out the areas that are too small
+      return polygons.filter((f, index) => areas[index] > maxArea * 0.5)
+        .map(f => turf.centerOfMass(f).geometry.coordinates);
+    default:
+      return [];
+  }
+}
 
 class LabeledGeoJsonLayer extends CompositeLayer {
   updateState({ changeFlags }) {
