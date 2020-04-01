@@ -2,7 +2,7 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory(require("deck"), require("deck"));
 	else if(typeof define === 'function' && define.amd)
-		define([, ], factory);
+		define("LabeledGeoJsonLayerLibrary", [, ], factory);
 	else if(typeof exports === 'object')
 		exports["LabeledGeoJsonLayerLibrary"] = factory(require("deck"), require("deck"));
 	else

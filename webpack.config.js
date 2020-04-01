@@ -3,7 +3,8 @@ module.exports = {
   output: {
     libraryTarget: "umd",
     filename: "bundle.js",
-    library: "LabeledGeoJsonLayerLibrary"
+    library: "LabeledGeoJsonLayerLibrary",
+    umdNamedDefine: true
   },
   entry: "./index.js",
   externals: {
