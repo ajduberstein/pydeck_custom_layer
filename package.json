@@ -1,5 +1,5 @@
 {
-    "name": "LabeledGeoJsonLayer",
+    "name": "pydeck-custom-layer-demo",
     "version": "0.0.1",
     "description": "A demo custom layer for the pydeck Python library",
     "main": "index.js",
