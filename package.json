@@ -1,8 +1,12 @@
 {
     "name": "LabeledGeoJsonLayer",
-    "version": "0.0.0",
+    "version": "0.0.1",
+    "description": "A demo custom layer for the pydeck Python library",
     "main": "index.js",
-    "private": true,
+    "license": "MIT",
+    "repository": "https://github.com/ajduberstein/pydeck_custom_layer",
+    "main": "dist/bundle.js",
+    "unpkg": "dist/bundle.js",
     "dependencies": {
         "@deck.gl/core": "^8.0.12",
         "@deck.gl/layers": "^8.0.12",
