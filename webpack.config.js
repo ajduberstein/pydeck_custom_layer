@@ -1,22 +1,11 @@
-module.exports = {
-  mode: "development",
-  output: {
-    libraryTarget: "umd",
-    filename: "bundle.js",
-    library: "LabeledGeoJsonLayerLibrary",
-    umdNamedDefine: true
-  },
-  entry: "./index.js",
-  externals: {
-    "@deck.gl/layers": {
-      commonjs: "deck",
-      commonjs2: "deck",
-      root: "deck"
+module.exports = [
+  {
+    mode: 'development',
+    entry: './index.js',
+    output: {
+      filename: './bundle.js'
     },
-    "@deck.gl/core": {
-      root: "deck",
-      commonjs: "deck",
-      commonjs2: "deck"
-    }
+    target: 'web',
+    externals: ['@deck.gl/core', '@deck.gl/layers', '@luma.gl/core']
   }
-};
+];

@@ -1,6 +1,6 @@
 import * as turf from "@turf/turf";
-import { CompositeLayer } from "@deck.gl/core";
-import { GeoJsonLayer, TextLayer } from "@deck.gl/layers";
+
+import {CompositeLayer, GeoJsonLayer, TextLayer} from './deck-layers';
 
 const defaultProps = {
   // Inherit all of GeoJsonLayer's props
