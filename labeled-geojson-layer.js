@@ -1,3 +1,4 @@
+// A deck.gl custom layer taken from https://observablehq.com/@pessimistress/deck-gl-custom-layer-tutorial
 import * as turf from "@turf/turf";
 
 import {CompositeLayer, GeoJsonLayer, TextLayer} from './deck-layers';
