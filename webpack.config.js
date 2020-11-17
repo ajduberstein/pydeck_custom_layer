@@ -9,6 +9,7 @@ module.exports = [
     externals: ['@deck.gl/core', '@deck.gl/layers', '@luma.gl/core'],
     devServer: {
       contentBase: __dirname,
+      writeToDisk: true,
       port: 8080
     }
   }
